@@ -19,7 +19,7 @@ server.get('/api',(req,res)=>{
     res.json({message:'web43 is working and ready to serve'})
 })
 server.use((req,res)=>{
-    res.json({message:'sorry could not serve'})
+    res.status(404).json({message:'sorry could not serve'})
 })
 server.listen(PORT,()=>{
     console.log(`I am listening at ${PORT}`)
