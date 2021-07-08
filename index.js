@@ -21,6 +21,6 @@ server.get('/api',(req,res)=>{
 server.use((req,res)=>{
     res.json({message:'sorry could not serve'})
 })
-server.listen(5000,()=>{
+server.listen(PORT,()=>{
     console.log(`I am listening at ${PORT}`)
 })
